@@ -1,0 +1,23 @@
+{
+  "name": "asyncjs",
+  "version": "1.0.0",
+  "description": "async js with code examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaksymTeslenkoDev/AsyncJS.git"
+  },
+  "keywords": [
+    "async",
+    "js"
+  ],
+  "author": "maksim.teslenko.dev@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MaksymTeslenkoDev/AsyncJS/issues"
+  },
+  "homepage": "https://github.com/MaksymTeslenkoDev/AsyncJS#readme"
+}
