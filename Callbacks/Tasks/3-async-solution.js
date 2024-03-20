@@ -25,18 +25,18 @@ const total = (items,callback) => {
                 clearInterval(interval)
                 interval = null;
             }
-            callback(null, result);
-            return;
+            return callback(null, result);
         };
         const item = itemsCoppy.shift();
         console.log({ check: { item } });
         if (item.price < 0) {
-            clearInterval(interval);
-            callback(new Error('Negative price is not allowed'));
-            return;
+            if(interval){
+                clearInterval(interval);
+                interval = null;
+            }
+            return callback(new Error('Negative price is not allowed'));
         }
         result += item.price;
-        // clearInterval(interval);
     },1000);
 };
 
